@@ -1,44 +1,60 @@
-a, b = int(input()), int(input())
-if a > b:
-    print(a)
-elif b > a:
-    print(b)
-else:
-    print('Равны')
+def compare(a, b):
+    if a > b:
+        print(a)
+    elif a < b:
+        print(b)
 
 
-c, d = int(input()), int(input())
-if c - d == 135 or d - c == 135 or c - d == - 135 or d - c == -135:
-    print('YES')
-else:
-    print('NO')
+print(compare(1, -6))
 
 
-e = int(input())
-if e != 0 and e <= 2 or e == 12:
-    print('Зима')
-elif e != 0 and 3 <= e <= 5:
-    print('Весна')
-elif e != 0 and 6 <= e <= 8:
-    print('Лето')
-elif e != 0 and 9 <= e <= 11:
-    print('Осень')
+def differ(c, d):
+    if c - d == 135 or d - c == 135 or c - d == - 135 or d - c == -135:
+        print('YES')
+    else:
+        print('NO')
 
 
-f, g, h = int(input()), int(input()), int(input())
-if f > 10 and g > 10 and h > 10:
-    print('YES')
-else:
-    print('NO')
+print(differ(270, 135))
 
 
-#  дополнительное 1
+def season(e):
+    if e != 0 and e <= 2 or e == 12:
+        print('Зима')
+    elif e != 0 and 3 <= e <= 5:
+        print('Весна')
+    elif e != 0 and 6 <= e <= 8:
+        print('Лето')
+    elif e != 0 and 9 <= e <= 11:
+        print('Осень')
 
 
+print(season(11))
 
 
-#  дополнительное 2
+def bigger(f, g, h):
+    if f > 10 and g > 10 and h > 10:
+        print('YES')
+    else:
+        print('NO')
 
-year = int(input())
-month = int(input())
-print((year * 12 * 29) + (month * 29))
+
+print(bigger(11, 12, 9))
+
+
+def positive(list_1) -> int:  # дополнительное 1
+    a = 0
+    for num in list_1:
+        if num > 0:
+            a = a + 1
+    return a
+
+
+print(positive([1, 2, -3, 4, 5]))
+
+
+def indays(y, m) -> int:  # дополнительное 2
+    return (y * 12 * 29) + (m * 29)
+
+
+print(indays(2, 5))
