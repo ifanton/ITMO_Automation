@@ -5,7 +5,7 @@ def compare(a, b):
         print(b)
 
 
-print(compare(1, -6))
+compare(1, -6)
 
 
 def differ(c, d):
@@ -15,7 +15,7 @@ def differ(c, d):
         print('NO')
 
 
-print(differ(270, 135))
+differ(270, 135)
 
 
 def season(e):
@@ -29,7 +29,7 @@ def season(e):
         print('Осень')
 
 
-print(season(11))
+season(11)
 
 
 def bigger(f, g, h):
@@ -39,7 +39,7 @@ def bigger(f, g, h):
         print('NO')
 
 
-print(bigger(11, 12, 9))
+bigger(11, 12, 9)
 
 
 def positive(list_1) -> int:  # дополнительное 1
