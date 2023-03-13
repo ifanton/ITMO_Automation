@@ -1,7 +1,7 @@
 # Доп задание 1
 class Car:
 
-    def __init__(self, color=None, type=None, year=None):
+    def __init__(self, color, type, year):
         self.color = color
         self.type = type
         self.year = year
@@ -12,19 +12,22 @@ class Car:
     def shutdown(self):
         print('Автомобиль заглушен')
 
-    def year(self):
-        if not self.year:
-            print('1986')
+    def years(self, year_new):
+        self.year = year_new
 
-    def type(self):
-        return type == 'Coupe'
+    def types(self, type_new):
+        self.type = type_new
 
-    def color(self):
-        return color == 'Blau'
+    def colors(self, color_new):
+        self.color = color_new
 
 
-bmw = Car()
+bmw = Car('Blau', 'Coupe', '1986')
 
 bmw.starter()
 bmw.shutdown()
-bmw.year()
+bmw.years('1999')
+bmw.types('Sedan')
+bmw.colors('Schwarz')
+
+print(bmw.color, bmw.type, bmw.year)
