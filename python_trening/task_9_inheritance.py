@@ -2,11 +2,11 @@ class Mammal:
     className = 'Млекопитающее'
 
 
-class Dog(Mammal):
+class Dog(Mammal):  # В скобках ссылка на родительский класс
     species = 'Canis lupus'
 
 
-class Nickname(Dog):
+class Nickname(Dog):  # В скобках ссылка на родительский класс
     name = 'Pluto'
 
 
